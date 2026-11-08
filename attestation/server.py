@@ -58,7 +58,7 @@ class AttestationEnclaveService:
         vault_address = str(
             data.get(
                 "vault_address",
-                "CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5",
+                "CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR",
             )
         )
         enclave_result = self.enclave.sign_voucher(
