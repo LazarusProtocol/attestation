@@ -14,8 +14,8 @@ services:
       LAZARUS_MAX_HOURLY_OUTFLOW: ${LAZARUS_MAX_HOURLY_OUTFLOW:-50000000000}
       LAZARUS_ORACLE_SIGNING_SEED_HEX: ${LAZARUS_ORACLE_SIGNING_SEED_HEX:-}
       LAZARUS_ATTESTATION_API_KEY: ${LAZARUS_ATTESTATION_API_KEY:-}
-    ports:
-      - "${LAZARUS_ENCLAVE_PORT:-8085}:8085"
+    expose:
+      - "8085"
     networks:
       - lazarus-net
     restart: unless-stopped
